@@ -11,19 +11,19 @@ namespace test0809
     {
         public student(string firstname, string lastname, int codeid, int dateold, int score)
         {
-            this.Firstname = firstname;
-            this.Lastname = lastname;
-            this.codeid = codeid;
-            this.dateold = dateold;
-            this.Score = score;
+            Firstname = firstname;
+            Lastname = lastname;
+            Codeid = codeid;
+            Dateold = dateold;
+            Score = score;
         }
 
         public string Firstname { get; set; }
         public string Lastname { get; set; }
 
-        public int codeid { get; set; }
+        public int Codeid { get; set; }
 
-        public int dateold { get; set; }
+        public int Dateold { get; set; }
         public int Score { get; set; }
 
 
@@ -41,6 +41,7 @@ namespace test0809
         static List<int> student_dateold = new List<int>();
         static List<int> student_score = new List<int>();
 
+        //this method should be in controller not in Models!
         public void AddStudent(string name, string family, int codeid, int dateold, int score)
         {
             student_name.Add(name);
